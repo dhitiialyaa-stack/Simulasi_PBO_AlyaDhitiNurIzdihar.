@@ -14,6 +14,11 @@ class PendaftaranKedinasan extends Pendaftaran {
         $this->instansiSponsor = $instansiSponsor;
     }
 
+    // Tambahkan/sisipkan method ini di dalam class PendaftaranKedinasan
+    public function hitungTotalBiaya() {
+        return $this->biayaPendaftaranDasar * 1.25;
+    }
+
     public function tampilkanInfoJalur() {
         return "Jalur Pendaftaran: Kedinasan | No SK: " . $this->skIkatanDinas . " | Sponsor: " . $this->instansiSponsor;
     }

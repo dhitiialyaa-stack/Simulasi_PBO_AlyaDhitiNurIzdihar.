@@ -14,6 +14,11 @@ class PendaftaranPrestasi extends Pendaftaran {
         $this->tingkatPrestasi = $tingkatPrestasi;
     }
 
+    // Tambahkan/sisipkan method ini di dalam class PendaftaranPrestasi
+    public function hitungTotalBiaya() {
+        return $this->biayaPendaftaranDasar - 50000;
+    }
+
     public function tampilkanInfoJalur() {
         return "Jalur Pendaftaran: Prestasi | Jenis: " . $this->jenisPrestasi . " | Tingkat: " . $this->tingkatPrestasi;
     }

@@ -15,6 +15,11 @@ class PendaftaranReguler extends Pendaftaran {
         $this->lokasiKampus = $lokasiKampus;
     }
 
+    // Tambahkan/sisipkan method ini di dalam class PendaftaranReguler
+    public function hitungTotalBiaya() {
+        return $this->biayaPendaftaranDasar;
+    }
+
     public function tampilkanInfoJalur() {
         return "Jalur Pendaftaran: Reguler | Prodi: " . $this->pilihanProdi . " | Kampus: " . $this->lokasiKampus;
     }
